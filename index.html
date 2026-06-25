@@ -2,228 +2,221 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Blintz | Full Stack Developer & Enterprise POS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>POSync | Ecosistema POS & Full Stack</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="POSync">
+
     <link rel="stylesheet" href="./css/style.css">
-    <!-- Google Fonts Premium -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Capa del Fondo de Partículas Interactivas -->
     <div id="tsparticles"></div>
 
-    <div class="container">
+    <header class="navbar">
+        <div class="logo">POSYNC <span>/ FULL STACK</span></div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#pos-software">Sistema POS</a>
+            <a href="#planes">Planes</a>
+            <a href="#trayectoria">Sobre Mí</a>
+            <a href="#contacto" class="btn-nav">Iniciar Proyecto</a>
+        </nav>
+    </header>
 
-        <!-- NAVBAR ULTRA-MINIMALISTA -->
-        <header class="navbar">
-            <div class="logo">POSYNC <span>/ FULL STACK</span></div>
-            <nav class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#pos-software">Sistema POS</a>
-                <a href="#planes">Planes y Precios</a>
-                <a href="#trayectoria">Sobre Mí</a>
-                <a href="#contacto" class="btn-nav">Iniciar Proyecto</a>
-            </nav>
-        </header>
+    <nav class="apple-tab-bar">
+        <a href="#inicio" class="tab-item active">
+            <i class="bi bi-house-door-fill"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="#pos-software" class="tab-item">
+            <i class="bi bi-app-indicator"></i>
+            <span>Sistema</span>
+        </a>
+        <a href="#planes" class="tab-item">
+            <i class="bi bi-credit-card-fill"></i>
+            <span>Planes</span>
+        </a>
+        <a href="#trayectoria" class="tab-item">
+            <i class="bi bi-person-badge-fill"></i>
+            <span>Sobre Mí</span>
+        </a>
+        <a href="#contacto" class="tab-item">
+            <i class="bi bi-chat-left-text-fill"></i>
+            <span>Contacto</span>
+        </a>
+    </nav>
 
-        <!-- SECCIÓN 1: HERO (Impacto inmediato) -->
-        <section id="inicio" class="hero-section">
-            <div class="badge">INGENIERÍA SOFTWARE DE ALTO RENDIMIENTO</div>
-            <h1 class="hero-title">Elegancia Visual.<br>Rendimiento Absoluto.</h1>
-            <p class="hero-subtitle">Desarrollo ecosistemas Full Stack robustos y sistemas POS corporativos diseñados para escalar la operación de tu negocio al siguiente nivel.</p>
-            <div class="hero-ctas">
-                <a href="#planes" class="btn btn-primary">Ver Planes de Suscripción</a>
-                <a href="#trayectoria" class="btn btn-secondary">Perfil Full Stack</a>
+    <main class="container">
+
+        <section id="inicio" class="section-container">
+            <div class="hero-section">
+                <span class="badge">NUEVA VERSIÓN ESTRATÉGICA</span>
+                <h1 class="hero-title">Sistemas POS a la medida de tu negocio</h1>
+                <p class="hero-subtitle">Optimiza tus ventas, controla inventarios en tiempo real y toma el control absoluto de tus finanzas desde cualquier dispositivo.</p>
+                <div class="hero-ctas">
+                    <a href="#contacto" class="btn btn-primary">Iniciar Proyecto</a>
+                    <a href="#pos-software" class="btn btn-secondary">Ver Sistema</a>
+                </div>
+            </div>
+
+            <div class="metrics-bar">
+                <div class="metric-item">
+                    <span class="metric-number">+99%</span>
+                    <span class="metric-label">Uptime Estable</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">&lt; 2s</span>
+                    <span class="metric-label">Respuesta Rápida</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">100%</span>
+                    <span class="metric-label">Código Seguro</span>
+                </div>
             </div>
         </section>
 
-        <!-- INDICADORES DE CONFIANZA (Métricas Clave de Mercado) -->
-        <section class="metrics-bar">
-            <div class="metric-item">
-                <span class="metric-number">99.9%</span>
-                <span class="metric-label">Uptime en APIs Backend</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-number">&lt; 1.2s</span>
-                <span class="metric-label">Carga de Interfaz (SPA)</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-number">100%</span>
-                <span class="metric-label">Seguridad & Cifrado de Datos</span>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 2: PORTAFOLIO DE IMÁGENES INTERACTIVAS (Tu Sistema POS) -->
         <section id="pos-software" class="section-container">
             <div class="section-header">
-                <span class="section-tag">PRODUCTO</span>
-                <h2>Ecosistema POS Corporativo</h2>
-                <p>Una suite visual intuitiva creada para el control absoluto de inventarios, ventas y analítica.</p>
+                <span class="section-tag">ECOSISTEMA POSYNC</span>
+                <h2>Módulos de Alta Ingeniería</h2>
+                <p>Pasa el mouse o toca las tarjetas para revelar los detalles técnicos de cada solución.</p>
             </div>
 
             <div class="gallery-grid">
-                <!-- Imagen 1: Dashboard -->
                 <div class="gallery-card">
                     <div class="image-wrapper">
-                        <img src="pos-dashboard.jpg" alt="Dashboard interactivo POS">
-                        <div class="card-overlay">
-                            <h3>Analytics en Tiempo Real</h3>
-                            <p>Métricas de ventas, reportes financieros dinámicos y proyección de stock construido con Angular.</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Analytics">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Analytics en Tiempo Real</h3>
+                        <p>Métricas de ventas, reportes financieros dinámicos y proyección de stock construido con Angular.</p>
                     </div>
                 </div>
 
-                <!-- Imagen 2: Inventario -->
                 <div class="gallery-card">
                     <div class="image-wrapper">
-                        <img src="pos-inventario.jpg" alt="Módulo de Inventario Automatizado">
-                        <div class="card-overlay">
-                            <h3>Control Automático de Stock</h3>
-                            <p>Sincronización en la nube, alertas inteligentes de reabastecimiento y trazabilidad total.</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Punto de Venta">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Caja y Facturación</h3>
+                        <p>Procesamiento de pagos veloz, control de turnos y compatibilidad con impresoras térmicas locales.</p>
                     </div>
                 </div>
 
-                <!-- Imagen 3: Terminal de Ventas -->
                 <div class="gallery-card">
                     <div class="image-wrapper">
-                        <img src="pos-ventas.jpg" alt="Terminal Punto de Venta">
-                        <div class="card-overlay">
-                            <h3>Módulo de Caja Veloz</h3>
-                            <p>Diseño responsivo optimizado para pantallas táctiles y facturación electrónica integrada.</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Inventario">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Gestión de Almacenes</h3>
+                        <p>Kardex automatizado, alertas por desabastecimiento dinámico y trazabilidad integral de productos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 3: TABLA DE PRECIOS ESTRATÉGICA (Bolivia) -->
         <section id="planes" class="section-container">
             <div class="section-header">
-                <span class="section-tag">SaaS PRECIOS</span>
-                <h2>Inversión Inteligente para tu Negocio</h2>
-                <p>Elige la potencia que tu empresa necesita. Optimiza tus costos con nuestras tarifas locales para Bolivia.</p>
+                <span class="section-tag">INVERSIÓN</span>
+                <h2>Planes Flexibles</h2>
+                <p>Escala tu plataforma tecnológica según las necesidades exactas de tu operación.</p>
             </div>
 
             <div class="pricing-grid">
-                <!-- Plan 1 -->
                 <div class="price-card">
-                    <h3>Esencial Comercio</h3>
-                    <div class="price">Bs. 150 <span>/ mes</span></div>
+                    <h3>Emprendedor</h3>
+                    <div class="price">Bs. 199 <span>/ mes</span></div>
                     <ul class="price-features">
-                        <li>1 Sucursal y 2 Usuarios</li>
-                        <li>Control de Caja Chica y Ventas</li>
-                        <li>Gestión de Inventario Tradicional</li>
-                        <li>Reportes Diarios automáticos</li>
-                        <li>Cobros QR integrados</li>
+                        <li>1 Sucursal Activa</li>
+                        <li>Gestión de Inventario Básico</li>
+                        <li>Reportes PDF Semanales</li>
+                        <li>Soporte vía Ticket</li>
                     </ul>
-                    <a href="https://wa.me/59177555869?text=Hola!%20Quiero%20solicitar%20un%20demo%20del%20Plan%20Esencial%20Comercio" class="btn btn-secondary" target="_blank">Solicitar Demo</a>
+                    <a href="#contacto" class="btn btn-secondary">Elegir Plan</a>
                 </div>
 
-                <!-- Plan 2 (Destacado para competir en el medio) -->
                 <div class="price-card featured">
-                    <span class="popular-badge">RECOMENDADO</span>
-                    <h3>Profesional ERP</h3>
-                    <div class="price">Bs. 290 <span>/ mes</span></div>
+                    <div class="popular-badge">MÁS POPULAR</div>
+                    <h3>Business Pro</h3>
+                    <div class="price">Bs. 399 <span>/ mes</span></div>
                     <ul class="price-features">
                         <li>Hasta 3 Sucursales</li>
-                        <li>Usuarios y Roles Ilimitados</li>
-                        <li>Control de Almacenes y Traspasos</li>
-                        <li>Alertas Inteligentes de Stock</li>
-                        <li>Reportes Gráficos Avanzados</li>
-                        <li>Listo para Integración SIAT</li>
+                        <li>Analytics en Tiempo Real</li>
+                        <li>Módulo de Facturación</li>
+                        <li>Soporte Técnico WhatsApp</li>
                     </ul>
-                    <a href="https://wa.me/59177555869?text=Hola!%20Me%20interesa%20adquirir%20el%20Plan%20Profesional%20ERP" class="btn btn-primary" target="_blank">Iniciar Ahora</a>
+                    <a href="#contacto" class="btn btn-primary">Adquirir Pro</a>
                 </div>
 
-                <!-- Plan 3 -->
                 <div class="price-card">
-                    <h3>Corporativo / SIAT</h3>
-                    <div class="price">Bs. 490 <span>/ mes</span></div>
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom <span>/ Medida</span></div>
                     <ul class="price-features">
-                        <li>Sucursales e Inventarios Ilimitados</li>
-                        <li>Facturación Electrónica SIAT incluida</li>
-                        <li>Módulo de Clientes y Proveedores</li>
-                        <li>Copias de Seguridad Diarias</li>
-                        <li>API abierta para integraciones</li>
-                        <li>Soporte 24/7 Dedicado</li>
+                        <li>Sucursales Ilimitadas</li>
+                        <li>Infraestructura Dedicada</li>
+                        <li>Desarrollo de Módulos</li>
+                        <li>Soporte 24/7 Telefónico</li>
                     </ul>
-                    <a href="https://wa.me/59177555869?text=Hola!%20Necesito%20asesoramiento%20para%20el%20Plan%20SIAT%20Corporativo" class="btn btn-secondary" target="_blank">Contactar Consultor</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 4: PERFIL PROFESIONAL FULL STACK (Genera autoridad) -->
-        <section id="trayectoria" class="section-container profile-grid">
-            <div class="profile-info">
-                <span class="section-tag">EL DESARROLLADOR</span>
-                <h2>Ingeniería detrás de cada línea de código</h2>
-                <p class="profile-desc">
-                    Me especializo en diseñar y programar soluciones completas de software (Frontend y Backend). No solo configuro interfaces visualmente atractivas; estructuro arquitecturas de bases de datos sólidas, seguras y de alta disponibilidad para empresas exigentes.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">Angular / React</span>
-                    <span class="tech-badge">Node.js / Express</span>
-                    <span class="tech-badge">NestJS</span>
-                    <span class="tech-badge">PostgreSQL / MongoDB</span>
-                    <span class="tech-badge">Docker / AWS</span>
-                    <span class="tech-badge">Rest APIs / WebSockets</span>
+        <section id="trayectoria" class="section-container">
+            <div class="profile-grid">
+                <div class="profile-info">
+                    <span class="badge">PERFIL FULL STACK</span>
+                    <h2>Soluciones Robustas de Extremo a Extremo</h2>
+                    <p class="profile-desc">Diseño, estructuro e implemento ecosistemas tecnológicos que combinan interfaces fluidas con arquitecturas de backend altamente tolerantes a fallos.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="trust-cards">
-                <div class="trust-card">
-                    <div class="trust-icon">🔒</div>
-                    <h4>Código Seguro y Auditable</h4>
-                    <p>Desarrollo bajo buenas prácticas internacionales, arquitectura limpia y control de versiones transparente en GitHub.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">🚀</div>
-                    <h4>Escalabilidad Garantizada</h4>
-                    <p>Sistemas preparados para soportar miles de peticiones simultáneas sin pérdida de rendimiento ni caídas de servidor.</p>
+                <div class="trust-cards">
+                    <div class="trust-card">
+                        <div class="trust-icon">⚙️</div>
+                        <h4>Arquitectura de Software</h4>
+                        <p>Estructuras limpias diseñadas para escalar sin dolores de cabeza a futuro.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 5: FORMULARIO DE CONTACTO (Conversión) -->
-        <section id="contacto" class="section-container contact-section">
+        <section id="contacto" class="section-container">
             <div class="contact-box">
-                <h2>¿Tienes requerimientos especiales?</h2>
-                <p>Hablemos sobre adaptaciones de software a medida o integraciones personalizadas con tu ERP actual.</p>
-
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Solicitud de consultoría enviada con éxito!');">
+                <h2>Construyamos tu Sistema</h2>
+                <p>Escríbeme hoy mismo y desarrollemos la herramienta que potenciará tus ventas.</p>
+                <form class="contact-form" onsubmit="event.preventDefault();">
                     <div class="form-group">
-                        <input type="text" placeholder="Tu Nombre o Empresa" required>
+                        <input type="text" placeholder="Nombre completo" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Correo Electrónico de Contacto" required>
+                        <input type="email" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="4" placeholder="Cuéntame brevemente qué tipo de negocio tienes o qué software requieres..." required></textarea>
+                        <textarea placeholder="Cuéntame sobre tu negocio o proyecto..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud de Consultoría</button>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Propuesta</button>
                 </form>
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <footer class="main-footer">
-            <p>&copy; 2026 POSync. Todos los derechos reservados. Desarrollado con excelencia Full Stack.</p>
-        </footer>
+    </main>
 
-    </div>
-
-    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
-    <!-- Nota: Reemplaza 591XXXXXXXX con tu número de teléfono real en Bolivia -->
-    <a href="https://wa.me/59177555869?text=Hola!%20Vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20sobre%20tus%20servicios%20y%20el%20sistema%20POS." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 32 32" class="whatsapp-icon">
-            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.733 5.483 2.01 7.805l-2.01 7.337 7.513-1.972c2.242 1.19 4.8 1.83 7.487 1.83 8.837 0 16-7.163 16-16s-7.163-16-16-16zm8.29 21.842c-.342.965-1.72 1.76-2.383 1.873-.655.108-1.543.195-2.456-.103-.538-.178-1.226-.43-2.1-.808-3.71-1.614-6.1-5.388-6.286-5.637-.182-.248-1.5-1.99-1.5-3.8s.936-2.707 1.27-3.047c.33-.338.72-.423.96-.423h.682c.245 0 .573-.01.874.717.312.753 1.07 2.613 1.162 2.805.093.193.155.416.027.67-.128.256-.192.417-.384.64-.192.224-.403.5-.575.672-.192.193-.393.4-.17.784.223.384 1 1.634 2.14 2.653 1.467 1.306 2.702 1.713 3.085 1.905.384.192.608.16.832-.096.223-.256.96-1.12 1.216-1.505.257-.385.513-.32.865-.192.353.128 2.243 1.057 2.34 1.105.096.047.16.224.064.496z"/>
-        </svg>
+    <a href="https://wa.me/591XXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.256 5.264 0 11.73 0c3.132.001 6.077 1.22 8.29 3.436.002.002.003.003.005.005 2.212 2.215 3.43 5.162 3.43 8.295 0 6.474-5.263 11.734-11.728 11.734-2.007-.001-3.983-.515-5.741-1.493L0 24zm6.59-4.846c1.6.95 3.197 1.451 4.793 1.453 5.357 0 9.713-4.358 9.716-9.719.002-2.596-1.01-5.036-2.85-6.879C16.405 2.167 13.964 1.155 11.373 1.155 6.012 1.155 1.65 5.513 1.647 10.875c-.001 1.685.454 3.317 1.316 4.77l-.333 1.216L3.92 20.31l1.242-.326 1.485-.39zm12.357-5.07c-.3-.149-1.769-.872-2.042-.972-.274-.1-.474-.149-.674.15-.2.299-.773.972-.948 1.171-.175.199-.349.224-.649.075-.3-.149-1.265-.466-2.41-1.486-.892-.796-1.493-1.778-1.668-2.077-.175-.299-.018-.461.13-.61.134-.133.3-.349.449-.523.149-.174.199-.299.299-.498.1-.2.05-.374-.025-.523-.075-.149-.674-1.62-.923-2.219-.242-.58-.488-.5-.674-.51-.175-.01-.374-.012-.573-.012-.2 0-.523.075-.797.374-.274.299-1.047 1.022-1.047 2.492 0 1.47 1.071 2.89 1.221 3.089.15.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.631.716.227 1.368.195 1.884.118.575-.085 1.769-.723 2.018-1.42.249-.697.249-1.295.174-1.42-.075-.124-.274-.199-.574-.349z"/></svg>
     </a>
 
-    <!-- tsParticles Slim para el fondo dinámico fluido -->
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.4.0/tsparticles.slim.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
