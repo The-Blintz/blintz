@@ -12,6 +12,9 @@
       name="description"
       content="Desarrollo de software a medida ademas de hacer realidad la tecnologia al alcance de tus manos"
     />
+
+    <meta name="referrer" content="origin" />
+
     <meta name="author" content="Rudy David Castillo" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="BlintzLab" />
@@ -240,15 +243,10 @@
 <section id="contacto" class="section-container">
   <div class="contact-box">
     <h2>Construyamos tu Sistema</h2>
-    <p>
-      Escríbeme hoy mismo y desarrollemos la herramienta que potenciará
-      tus ventas.
-    </p>
+    <p>Escríbeme hoy mismo y desarrollemos la herramienta que potenciará tus ventas.</p>
 
-    <!-- 1. CAMBIO: Añadido action (con tu correo) y method="POST". Eliminado el onsubmit anterior -->
     <form class="contact-form" action="https://formsubmit.co" method="POST">
 
-      <!-- 2. CAMBIO: Añadido el atributo 'name' a cada campo para que el correo sepa qué dato es cuál -->
       <div class="form-group">
         <input type="text" name="Nombre" placeholder="Nombre completo" required />
       </div>
@@ -256,15 +254,9 @@
         <input type="email" name="Email" placeholder="Correo electrónico" required />
       </div>
       <div class="form-group">
-        <textarea
-          name="Mensaje"
-          placeholder="Cuéntame sobre tu negocio o proyecto..."
-          rows="5"
-          required
-        ></textarea>
+        <textarea name="Mensaje" placeholder="Cuéntame sobre tu negocio o proyecto..." rows="5" required></textarea>
       </div>
 
-      <!-- Opcional: Evita que aparezca un código Captcha molesto al usuario después de enviar -->
       <input type="hidden" name="_captcha" value="false">
 
       <button type="submit" class="btn btn-primary btn-block">
