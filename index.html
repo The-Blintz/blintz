@@ -246,7 +246,11 @@
     <p>Escríbeme hoy mismo y desarrollemos la herramienta que potenciará tus ventas.</p>
 
     <form class="contact-form" action="https://formsubmit.co/rudy.david.castillo@gmail.com" method="POST">
+  <!-- 1. CAMBIO: Redirige automáticamente a tu página tras enviar (sin mostrar la pantalla de FormSubmit) -->
+  <input type="hidden" name="_next" value="https://github.io">
 
+  <!-- 2. CAMBIO: Apaga por completo la pantalla de agradecimiento interna del servicio -->
+  <input type="hidden" name="_template" value="table">
       <div class="form-group">
         <input type="text" name="Nombre" placeholder="Nombre completo" required />
       </div>
