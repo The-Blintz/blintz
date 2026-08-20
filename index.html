@@ -245,13 +245,8 @@
     <h2>Construyamos tu Sistema</h2>
     <p>Escríbeme hoy mismo y desarrollemos la herramienta que potenciará tus ventas.</p>
 
-    <form class="contact-form" action="https://formsubmit.co/rudy.david.castillo@gmail.com" method="POST">
-      <!-- 1. CAMBIO: Redirige automáticamente a tu página tras enviar (sin mostrar la pantalla de FormSubmit) -->
-      <input type="hidden" name="_next" value="https://the-blintz.github.io/blintz/">
+    <form id="miFormulario" class="contact-form" action="https://formsubmit.co/rudy.david.castillo@gmail.com" method="POST">
 
-      <!-- 2. CAMBIO: Apaga por completo la pantalla de agradecimiento interna del servicio -->
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
 
       <div class="form-group">
         <input type="text" name="Nombre" placeholder="Nombre completo" required />
@@ -269,6 +264,10 @@
         Enviar Propuesta
       </button>
     </form>
+           <!-- 2. CAMBIO: Contenedor oculto donde aparecerá el mensaje de éxito -->
+    <div id="mensajeExito" style="display: none; margin-top: 20px; color: #10b981; font-weight: bold; text-align: center;">
+      ¡⚡ Propuesta enviada con éxito! Me pondré en contacto contigo pronto.
+    </div>
   </div>
 </section>
 
@@ -288,4 +287,46 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
+  <script>
+  document.getElementById('miFormulario').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que la página se recargue o se vaya a otra web
+
+    const formulario = this;
+    const boton = formulario.querySelector('button[type="submit"]');
+    const mensaje = document.getElementById('mensajeExito');
+
+    boton.innerText = "Enviando...";
+    boton.disabled = true;
+
+    // Enviamos los datos por detrás usando la API Fetch
+    fetch(formulario.action, {
+      method: formulario.method,
+      body: new FormData(formulario),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        mensaje.style.display = "block"; // Muestra el mensaje verde de éxito
+        formulario.reset(); // Limpia los campos del formulario
+        boton.innerText = "Enviar Propuesta";
+        boton.disabled = false;
+
+        // Opcional: Oculta el mensaje de éxito después de 5 segundos
+        setTimeout(() => { mensaje.style.display = "none"; }, 5000);
+      } else {
+        alert("Hubo un problema al enviar. Inténtalo de nuevo.");
+        boton.innerText = "Enviar Propuesta";
+        boton.disabled = false;
+      }
+    })
+    .catch(error => {
+      alert("Error de conexión. Inténtalo más tarde.");
+      boton.innerText = "Enviar Propuesta";
+      boton.disabled = false;
+    });
+  });
+</script>
+
 </html>
